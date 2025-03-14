@@ -6,14 +6,6 @@ favorite_numbers = {
 	'craig': 1000,
 }
 
-drew_number = favorite_numbers['drew']
-natalia_number = favorite_numbers['natalia']
-connor_number = favorite_numbers['connor']
-kenzie_number = favorite_numbers['kenzie']
-craig_number = favorite_numbers['craig']
-
-print(f"Drew's favorite number is {drew_number}.")
-print(f"Natalia's favorite number is {natalia_number}.")
-print(f"Connor's favorite number is {connor_number}.")
-print(f"Kenzie's favorite number is {kenzie_number}.")
-print(f"Craig's favorite number is {craig_number}.")
+for key, value in favorite_numbers.items():
+	print(f"\nPerson: {key.title()}")
+	print(f" Number: {value}")
